@@ -6,7 +6,6 @@ choco install powershell-core -y
 
 #Build Tools and SQL Package
 choco install visualstudio2022buildtools  -y
-choco install visualstudio2019sql --pre
 choco install ssdt17 -y
 
 #Profisee CLU
@@ -14,8 +13,8 @@ Set-Location $HOME\Downloads
 Invoke-WebRequest -OutFile MasterDataMaestroDesktop_x64.msi -Uri https://mdmdev.commonwealth.com/profisee/api/MasterDataMaestroDesktop_x64.msi
 msiexec.exe /I $HOME\Downloads\MasterDataMaestroDesktop_x64.msi
 
-
 ## Download ADO agent
+Set-Location C:\
 Invoke-WebRequest -OutFile vsts-agent-win-x64-2.204.0.zip -Uri https://vstsagentpackage.azureedge.net/agent/2.204.0/vsts-agent-win-x64-2.204.0.zip
 mkdir agent ; cd agent
 
