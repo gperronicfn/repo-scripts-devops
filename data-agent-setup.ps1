@@ -4,6 +4,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 #PowerShell Core
 choco install powershell-core -y
 
+#PowerShell Az Module
+Install-Module -Name Az -Scope AllUsers -Repository PSGallery -Force
+
 #Build Tools and SQL Package
 choco install visualstudio2022buildtools  -y
 choco install ssdt17 -y
