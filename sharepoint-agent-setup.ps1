@@ -9,7 +9,6 @@ Install-Module -Name Az -Scope AllUsers -Repository PSGallery -Force
 
 #Build Tools and SQL Package
 choco install visualstudio2022buildtools  -y
-choco install ssdt17 -y
 
 #VS Test Build Tools
 choco install visualstudio2019testagent
